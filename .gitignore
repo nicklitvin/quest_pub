@@ -1,0 +1,11 @@
+server/node_modules
+server/.env
+
+frontend/.expo
+frontend/node_modules
+frontend/api_keys
+frontend/google_console_api_key.json
+frontend/id.js
+
+locations/api_key
+locations/__pycache__

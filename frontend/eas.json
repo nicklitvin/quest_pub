@@ -1,0 +1,24 @@
+{
+  "cli": {
+    "version": ">= 3.16.0",
+    "promptToConfigurePushNotifications": false
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./google_console_api_key.json",
+        "track": "internal"
+      }
+    }
+  }
+}

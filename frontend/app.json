@@ -1,0 +1,54 @@
+{
+    "expo": {
+      "name": "Quest Finder",
+      "scheme": "com.nicklitvin.quest",
+      "slug": "quest1",
+      "version": "2.0.1",
+      "orientation": "portrait",
+      "icon": "./assets/adaptive-icon.png",
+      "userInterfaceStyle": "light",
+      "splash": {
+        "image": "./assets/splash.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#120F12"
+      },
+      "androidNavigationBar": {
+          "backgroundColor": "#120F12"
+      },
+      "androidStatusBar": {
+          "backgroundColor": "#120F12"
+      },
+      "assetBundlePatterns": [
+        "**/*"
+      ],
+      "ios": {
+        "supportsTablet": true,
+        "bundleIdentifier": "com.nicklitvin.quest",
+        "usesAppleSignIn": true,
+        "buildNumber": "2.0.1",
+        "infoPlist": {
+            "NSLocationWhenInUseUsageDescription": "This app needs precise location to find local quests and to calculate accurate distances"
+        }
+      },
+      "android": {
+        "versionCode": 8,
+        "adaptiveIcon": {
+          "foregroundImage": "./assets/adaptive-icon.png",
+          "backgroundColor": "#120F12"
+        },
+        "package": "com.nicklitvin.quest"
+      },
+      "web": {
+        "favicon": "./assets/favicon.png"
+      },
+      "extra": {
+        "eas": {
+          "projectId": "cd24f2f3-fcbc-42b8-9292-668443a20625"
+        }
+      },
+      "plugins": [
+        "expo-localization"
+      ]
+    }
+  }
+  

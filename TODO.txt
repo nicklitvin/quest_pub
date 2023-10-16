@@ -1,0 +1,80 @@
+TODO CODE
+college, nature filters
+infinite scroll
+
+build android v_2, apple v_2 with test?
+add locations events to v_2
+maybe add users too?
+test with android and apple 
+make some events up?
+
+google sign in change name to Quest Finder
+change description in Apple and Android stores
+update art
+
+frontend
+sort events by time asc?
+update location sql inserts
+move data safely
+
+LATER
+force update by changing old server to always return invalid key
+delete storage on deletion of account
+remove random white splash screen with logo before real splash screen
+encrypt all data in transit
+infinite scrolling, request data when scroll to very bottom
+use when offline, save quests locally and add to claim queue when internet is regained
+add sponsored tag to location table and show on frontend
+
+LESSONS LEARNED
+Build apk through expo to View
+React Native Buttons are weird, use TouchableOpacity
+https://developers.google.com/identity/protocols/oauth2/native-app#custom-uri-scheme
+for loop splice is bad combo
+
+MAPS STUFF
+get id of place
+https://developers.google.com/maps/documentation/places/web-service/place-id
+
+link for opening on web
+https://www.google.com/maps/place/?q=place_id:ChIJ0yK_PBm7j4ARbWeM5E9YaJA
+
+SQL INSERT STRUCTURE
+
+insert ignore into users (account_key, email)
+values 
+()
+
+insert ignore into locations (title, latitude, longitude, radius, place_id)
+values 
+(),
+
+insert ignore into events (title, latitude, longitude, radius, place_id, start_time, end_time, link, event_id)
+values
+(),
+
+insert into locations (title, latitude, longitude, radius, place_id)
+values
+('Golden Gate Bridge', 37, -121, 10, '1'),
+('Alamo Square', 36.8, -121.01, 10, '2'),
+('Telegraph Hill Viewpoint', 36.9, -121.08, 10, '3');
+
+insert into events (title, latitude, longitude, radius, place_id, start_time, end_time, link, event_id)
+values
+('asd',10,20,200,'ads','2023-10-04 13:23','2023-09-20 23:23','null','1f40fc92da24169475979ee6cf582f2d5d7d28e18335de05abc54d056ef53286c652bf08d56252aa5e7421546f369fbbbce8c12cfc7957b2652fe9a75');
+
+('Boston asd', 37, -121, 10, '4', '2024-04-17 16:00:00', '2024-04-17 19:00:00', null, '4'),
+('Boston Bruins vs Philadelphia Flyters', 36.8, -121.01, 10, '5', '2023-09-30 02:00:00', '2023-09-30 06:00:00', 'a', '5'),
+('Eric Nam Concert', 36.9, -121.08, 10, '6', '2023-10-14 02:30:00', '2023-10-14 04:30:00', 'a', '6'),
+('Christmas Tree Point', 36.95, -121.18, 10, '7', '2022-10-14 00:30:00', '2022-10-14 02:30:00', 'a', '7');
+
+insert into claims (claim_date, email, event_id)
+values 
+('2022-10-14 00:31:00', '4146750afb55521749613811d0322fc9561efebf70038ca49a39dcd533998e48', '7'),
+('2022-10-14 00:31:00', 'd9ef6f129f0c7bc04176469d7fbf2faf9c7fe24222239112a5fc7fcb25cf28ec', '7'),
+('2022-10-14 00:31:00', '186d9ff4d876fa569936b5ab9ef97e2c10dc1c7429c803db3aa5b8271019ffe4', '7');
+
+
+
+
+
